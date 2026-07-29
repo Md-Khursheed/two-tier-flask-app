@@ -36,32 +36,6 @@ This project helped me understand the fundamentals of application deployment bef
 
 ---
 
-# 🏗️ Project Architecture
-
-```
-
-                +-----------------------+
-                |      User Browser     |
-                +-----------+-----------+
-                            |
-                            |
-                      Port 5000
-                            |
-                +-----------v-----------+
-                |      Flask App        |
-                |     Python + Flask    |
-                +-----------+-----------+
-                            |
-                Docker Internal Network
-                            |
-                +-----------v-----------+
-                |      MySQL 5.7        |
-                |   Message Database    |
-                +-----------------------+
-
-```
-
----
 
 # 📂 Project Structure
 
@@ -86,20 +60,6 @@ two-tier-flask-app/
 
 ---
 
-# 🛠️ Technologies Used
-
-| Technology | Purpose |
-|------------|---------|
-| Python | Programming Language |
-| Flask | Web Framework |
-| MySQL 5.7 | Database |
-| Docker | Containerization |
-| Docker Compose | Multi-container Management |
-| Git | Version Control |
-| GitHub | Source Code Hosting |
-| Jenkins | CI/CD Pipeline (Future Integration) |
-
----
 
 # ⚙️ Prerequisites
 
@@ -260,64 +220,6 @@ Docker Compose automatically passes these variables to the Flask container.
 
 ---
 
-# 🔄 Docker Networking
-
-One of the most interesting things I learned from this project is that Docker Compose automatically creates a private network.
-
-Instead of connecting to MySQL using:
-
-```
-localhost
-```
-
-the Flask application connects using:
-
-```
-mysql
-```
-
-because **mysql** is the service name defined in `docker-compose.yml`.
-
----
-
-# 🧠 Challenges I Faced
-
-Being new to Docker, I encountered several issues while building this project.
-
-Some of them were:
-
-- Missing Python dependencies
-- mysqlclient installation errors
-- Docker build failures
-- Docker image conflicts
-- MySQL authentication issues
-- Flask not connecting to MySQL
-- Docker networking confusion
-- Container restart loops
-
-Solving these issues helped me better understand how Docker containers communicate and how applications are configured in production environments.
-
----
-
-# 📚 What I Learned
-
-Through this project I learned:
-
-- Docker basics
-- Docker Compose
-- Container networking
-- Multi-container applications
-- Flask configuration
-- MySQL integration
-- Environment variables
-- Image building
-- Container debugging
-- Reading Docker logs
-- Managing application dependencies
-
-More importantly, I learned that troubleshooting is a major part of DevOps, and every error teaches something new.
-
----
 
 # 🚀 Future Improvements
 
@@ -332,52 +234,3 @@ I plan to continue improving this project by adding:
 - Nginx Reverse Proxy
 - Monitoring with Prometheus & Grafana
 
----
-
-# 📸 Screenshots
-
-You can add screenshots here after running the application.
-
-Example:
-
-```
-screenshots/
-
-HomePage.png
-
-DockerContainers.png
-
-JenkinsPipeline.png
-```
-
----
-
-# 🤝 Connect With Me
-
-**Mohammad Khursheed**
-
-DevOps Enthusiast | AWS | Docker | Linux | Jenkins | Git | Python
-
-GitHub:
-```
-https://github.com/Md-Khursheed
-```
-
-LinkedIn:
-```
-https://www.linkedin.com/in/mohammad-khursheed-12a0053a5/
-```
-
----
-
-# ⭐ Support
-
-If you found this project helpful, consider giving it a ⭐ on GitHub.
-
-It motivates me to continue learning and building more DevOps projects.
-
----
-
-## 📄 License
-
-This project is created for educational and learning purposes.
