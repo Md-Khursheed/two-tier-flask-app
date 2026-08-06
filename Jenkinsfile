@@ -48,7 +48,7 @@ post{
         success{
             script{
                 emailext from: '2mdkhursheed@gmail.com',
-                to: '2mdkhursheed2gmail.com',
+                to: '2mdkhursheed@gmail.com',
                 body: 'Build success for Demo CICD App',
                 subject: 'Build success for Demo CICD App'
             }
