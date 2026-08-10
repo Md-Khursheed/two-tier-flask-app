@@ -166,27 +166,23 @@ The Flask app connects to MySQL using the following environment variables (confi
 
 ## 🔄 CI/CD Pipeline
 
-This project includes a `Jenkinsfile` that automates building and deploying the application whenever code is pushed. The pipeline:
+This project includes a Jenkinsfile that fully automates the build, scan, push, and deploy process using a declarative pipeline (with shared-library steps for cloning, scanning, and pushing).
 
-1. Pulls the latest code from GitHub (triggered via webhook)
-2. Builds the Docker image
-3. Redeploys the containers using Docker Compose
+Pipeline stages:
 
+Code Clone — Pulls the latest source from this repository
+Trivy File System Scan — Scans the codebase for known vulnerabilities before building
+Build — Builds the Docker image (docker build -t two-tier-flask-app .)
+Test — Placeholder stage reserved for automated tests
+Push to Docker Hub — Pushes the built image to Docker Hub using stored Jenkins credentials
+Deploy — Redeploys the app with docker compose up -d --build
+
+On completion, the pipeline sends an email notification reporting build success or failure.
 ---
 
-## 🚧 Future Improvements
-
-- [ ] Push images to Docker Hub as part of the pipeline
-- [ ] Add automated testing before deployment
-- [ ] Kubernetes deployment manifests
-- [ ] Deploy to AWS EC2
-- [ ] Add Nginx as a reverse proxy
-- [ ] Add monitoring with Prometheus & Grafana
-
----
 
 ## 👤 Author
 
 **Mohammad Khursheed**
-DevOps Engineer (Fresher)
+DevOps Engineer 
 [GitHub](https://github.com/Md-Khursheed) • [LinkedIn](https://linkedin.com/in/2-md-khursheed)
