@@ -1,4 +1,4 @@
-# 🚀 Two-Tier Flask Application with Docker & MySQL
+# 🚀 Two-Tier Flask Application with Docker, MySQL & Jenkins CI/CD
 
 A containerized two-tier web application built with **Flask** (application layer) and **MySQL** (database layer), orchestrated using **Docker Compose**. This project was built to understand real-world multi-container deployment patterns — networking, persistent storage, and environment-based configuration — the same fundamentals used in production DevOps workflows.
 
