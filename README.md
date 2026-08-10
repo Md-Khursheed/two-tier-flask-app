@@ -1,6 +1,8 @@
 # 🚀 Two-Tier Flask Application with Docker, MySQL & Jenkins CI/CD
 
-A containerized two-tier web application built with **Flask** (application layer) and **MySQL** (database layer), orchestrated using **Docker Compose**. This project was built to understand real-world multi-container deployment patterns — networking, persistent storage, and environment-based configuration — the same fundamentals used in production DevOps workflows.
+A DevOps project demonstrating a containerized Python Flask application connected to a MySQL database, deployed via Docker Compose and automated through a Jenkins CI/CD pipeline with Trivy security scanning.
+
+This project was built as part of my DevOps learning journey to understand containerization, multi-container application design, and CI/CD automation.
 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
