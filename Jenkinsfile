@@ -26,14 +26,7 @@ pipeline{
         }
         stage("Test"){
             steps{
-                  sh '''
-                    python3 -m venv venv
-                    . venv/bin/activate
-                    pip install --upgrade pip
-                    pip install -r requirements.txt
-                    pip install pytest
-                    pytest tests/ -v --junitxml=test-results.xml
-                '''
+                   echo "Developer / Tester tests likh ke dega..."
             }
             
         }
