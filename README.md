@@ -175,7 +175,7 @@ Pipeline stages:
 - **Code Clone** — Pulls the latest source from this repository
 - **Trivy File System Scan** — Scans the codebase for known vulnerabilities before building
 - **Build** — Builds the Docker image (`docker build -t two-tier-flask-app .`)
-- **Test** — Runs the automated pytest suite against the codebase
+- **Test** — Placeholder stage reserved for automated tests
 - **Push to Docker Hub** — Pushes the built image to Docker Hub using stored Jenkins credentials
 - **Deploy** — Redeploys the app with `docker compose up -d --build`
 
